@@ -1,7 +1,12 @@
 pg_inet_addr
 ============
 
-**pg_inet_addr** is an extension that lists interface addresses. The addresses will be IPv4 and IPv6 addresses assigned to interfaces.
+**pg_inet_addr** is an extension that lists interface addresses. The addresses
+will be IPv4 and IPv6 addresses assigned to interfaces.
+
+PostgreSQL local connections does not list IP addresses via `inet_server_addr`.
+Function `pg_inet_addr` provides all interface addresses even if you are not
+using a remote connection.
 
 Installing
 ----------
