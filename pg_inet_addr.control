@@ -1,0 +1,5 @@
+# pg_inet_addr extension
+comment = 'get interface names and network addresses'
+default_version = '1.0'
+module_pathname = '$libdir/pg_inet_addr'
+relocatable = true
